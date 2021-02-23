@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="log.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="form">
+        <div class="form__body">
+            <div class="form__nav">
+                <div class="form__nav__sign">
+                    <a class="nav__sign__sign" href="#sign">Sign in</a>
+                    <a class="nav__sign__join" href="#join">Join us</a>
+                </div>
+            </div>
+            <div class="form__input form__input-sing" id="sign">
+                <form action="#" name=login method="GET">
+                    <div class="form__input__label">
+                        <label for="name">Username</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div class="form__input__label">
+                        <label for="pass">Password</label>
+                        <input type="password" name="pass" id="pass">
+                    </div>
+                    <div class="form__input__radio">
+                        <input type="checkbox" id="check" name="check">
+                        <label for="check">Keep me signed in</label>
+                    </div>
+                    <button class="form__input__button" type="submit">Sign in</button>
+                    <div class="form__input__links">
+                        <a href="#">Forgot password</a>
+                        <a href="#">Create an account</a>
+                    </div>
+                </form>
+            </div>
+            <div class="form__input form__input-join" id="join">
+                <form action="#" name=login method="GET">
+                    <div class="form__input__label">
+                        <label for="name">Username</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div class="form__input__label">
+                        <label for="pass2">Password</label>
+                        <input type="password" name="pass2" id="pass2">
+                    </div>
+                    <div class="form__input__label">
+                        <label for="pass2">Repeat Password</label>
+                        <input type="password" name="pass2" id="pass2">
+                    </div>
+                    <button class="form__input__button" type="submit">Join in</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    let sing = document.querySelector('.nav__sign__sign');
+    let join = document.querySelector('.nav__sign__join');
+    let singAll = document.querySelector('#sign');
+    let joinAll = document.querySelector('#join')
+    join.addEventListener('click', (event) => {
+        singAll.classList.toggle('form__input-join');
+        joinAll.classList.toggle('form__input-join');
+    });
+    sing.addEventListener('click', (event) => {
+        joinAll.classList.toggle('form__input-join');
+        singAll.classList.toggle('form__input-join');
+    });
+</script>
+
+</html>

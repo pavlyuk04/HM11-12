@@ -1,0 +1,153 @@
+/* .title__rating {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    width: max-content;
+}
+input{
+    display: none;
+}
+label{
+    color: #7D7D7D;
+    font-size: 30px;
+}
+input:checked~label{
+    color: gold;
+} */
+@font-face {
+    font-family: 'Museo';
+        
+        src:    url('https://nomail.com.ua/files/eot/d6a6981db797f49f713352413e0e5d87.eot?#iefix') format('embedded-opentype'),
+                url('https://nomail.com.ua/files/woff/d6a6981db797f49f713352413e0e5d87.woff') format('woff'),
+                url('https://nomail.com.ua/files/woff2/d6a6981db797f49f713352413e0e5d87.woff2') format('woff2');
+}
+.background {
+    background-image: url(mainbg.png);
+    background-repeat: no-repeat;
+    height: 600px;
+    padding: 104px 55px;
+    margin: 0 auto;
+}
+.product {
+    max-width: 690px;
+    height: 65%;
+    border-radius: 3%;
+    background-color: #111A28;
+    position: relative;
+    margin: 0 0;
+}
+.product__logo {
+    position: relative;
+    left: 25px;
+    top: 25px;
+}
+
+.product__img {
+    position: absolute;
+    bottom: 25px;
+    left: 40px;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.produck__img__slider input {
+    display: none;
+}
+.produck__img__slider label {
+    display: inline-block;
+    margin-left: 8px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.produck__img__slider label {
+    background-color: rgb(255, 255, 255,0.45) ;
+}
+.produck__img__slider .slider-2 {
+    background-color: rgb(255, 255, 255) ;
+}
+.produck__img__slider .slider-3 {
+    background-color:#ED3333 ;
+}
+.produck__img__slider .slider-4 {
+    background-color: #29E3EA;
+}
+.produck__img__slider label:hover {
+    border:2px solid white;
+}
+.product__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30%;
+    height: 80%;
+    position: absolute;
+    right: 60px;
+    top: 25px;
+    font-family: 'Museo';
+    font-weight: 0;
+    color: #E1E1E1;
+}
+.title__healine h3{
+    font-weight: lighter;
+    font-size: 24px;
+    letter-spacing: 1.2px;
+    height: 70px;
+    margin: 0;
+    padding-top: 30px;
+}
+.title__text {
+    font-size: 14px;
+    opacity: 0.5;
+    letter-spacing: 1px;
+    position: relative;
+    top: -25px;
+}
+.title__rating {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    width: max-content;
+}
+.title__rating input{
+    display: none;
+}
+.title__rating label{
+    color: #7D7D7D;
+    font-size: 17px;
+}
+.title__rating input:checked~label{
+    color: gold;
+}
+.title__dropbox__size {
+    width: 70px;
+    height: 30px;
+    color: #fff;
+    background-color: rgb(17, 26, 40,0.3);
+    border:1px solid white;
+}
+.title__dropbox__qty {
+    width: 70px;
+    height: 30px;
+    color: #fff;
+    background-color: rgb(17, 26, 40,0.3);
+    border: 1px solid  #E1E1E1;
+}
+.title__button{
+    width: 185px;
+    height: 40px;
+    border: 1px solid  #E1E1E1;
+}
+.title__button a{
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    color: #E1E1E1;
+    font-family: 'Museo';
+    font-size: 14px;
+    font-weight: lighter;
+    letter-spacing: 1.2px;
+    padding: 11px 0 11px 0;
+}
